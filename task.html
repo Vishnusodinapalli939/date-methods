@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>open the console for output</h2>
+    <script>
+        /*
+Task 1: Get Current Date and Time
+
+- Input: None
+- Output: Current date and time (e.g., "2024-08-28T14:30:00.000Z")
+
+Task 2: Add Days to Date
+
+- Input: Date string (e.g., "2024-08-28"), number of days to add (e.g., 3)
+- Output: New date string (e.g., "2024-08-31")
+
+Task 3: Format Date as MM/DD/YYYY
+
+- Input: Date string (e.g., "2024-08-28")
+- Output: Formatted date string (e.g., "08/28/2024")
+
+Task 4: Get Number of Days Between Dates
+
+- Input: Two date strings (e.g., "2024-08-28", "2024-09-01")
+- Output: Number of days between dates (e.g., 4)
+*/
+let currTime=new Date();
+console.log(currTime);
+let addDays=new Date("2024-08-28");
+let x=addDays.getDate();
+console.log("New date string 2024-08-",x+3);
+let x1=new Date();
+let month=x1.getMonth();
+//console.log(month);
+let date=x1.getDate();
+//console.log(date);
+let year=x1.getFullYear();
+//console.log(year);
+let format=month+"/"+date+"/"+year;
+console.log(format);
+
+let date1=new Date("2024-08-28");
+let date2=new Date("2024-09-01");
+let diff=Math.abs(date2-date1);
+let day=1000*60*60*24;
+let diff1=Math.floor(diff/day);
+console.log(diff1);
+
+    </script>
+</body>
+</html>
